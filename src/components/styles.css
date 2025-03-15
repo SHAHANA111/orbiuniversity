@@ -1,0 +1,17 @@
+.buttons-col{
+    background-color: #043455;
+    color: white;
+}
+
+.buttons-col:hover{
+    background-color: #d2902c;
+    color: white;
+    cursor: pointer;
+}
+
+.links-pointer{
+    cursor: pointer;
+}
+.blue-color{
+    background: #043455;
+}
