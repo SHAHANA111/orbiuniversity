@@ -2,11 +2,14 @@
 
 import React from "react";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Category1 from "../components/Category1";
-import CourseCards1 from "../components/CourseCards1";
+import Navbar from "../components/Navbar";
+// import Footer from "../components/Footer";
+import Footer1 from "../components/Footer1";
+import Hero from "../components/Hero";
+// import Category1 from "../components/Category1";
+// import CourseCards1 from "../components/CourseCards1";
 import CourseCardMaster from "../components/CourseCardMaster";
-import { useCourses } from "./hooks/CourseContext";
+// import { useCourses } from "./hooks/CourseContext";
 
 const courses = [
   {
@@ -127,19 +130,22 @@ const courses = [
 
 // console.log(courses);
 const page = () => {
-  const { courses1 } = useCourses();
-  console.log(courses1);
+  // const { courses1 } = useCourses();
+  // console.log(courses1);
   return (
     <div className="bg-gray-100 min-h-screen">
-      <Header />
+      {/* <Header /> */}
+      <Navbar />
+
+      <Hero />
 
       {/* Hero Section */}
-      <section className="bg-[#043455] text-white py-20 text-center">
+      {/* <section className="bg-[#043455] text-white py-20 text-center">
         <h1 className="text-4xl font-bold">Welcome to Orbi University</h1>
         <p className="text-lg mt-4">
           Explore free courses and enhance your skills
         </p>
-      </section>
+      </section> */}
 
       {/* <Category1 /> */}
 
@@ -201,7 +207,9 @@ const page = () => {
         </div>
       </section>
 
-      <Footer />
+      <Footer1 />
+
+      {/* <Footer /> */}
     </div>
   );
 };

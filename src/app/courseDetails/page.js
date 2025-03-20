@@ -126,7 +126,7 @@ const CourseDetailContent = ({
         <main className="flex-grow pt-24 flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-2xl font-bold text-gray-800 mb-4">Course Not Found</h1>
-            <p className="text-gray-600 mb-6">The course you're looking for doesn't exist.</p>
+            <p className="text-gray-600 mb-6">The course you&apos;re looking for doesn&apos;t exist.</p>
             <Link href="/courses" className="px-4 py-2 rounded bg-blue-600 text-white">
               <ArrowLeft className="mr-2 h-4 w-4" /> Back to Courses 
             </Link>
@@ -194,7 +194,7 @@ const CourseDetailContent = ({
 
           <div className="md:w-1/3">
             <div className="overflow-hidden rounded-lg shadow-lg">
-            <img src={image} alt={title} className="w-full h-64 object-cover rounded-lg" />
+            <Image src={image} width={400} height={300} alt={title} className="w-full h-64 object-cover rounded-lg" />
 
             </div>
           </div>

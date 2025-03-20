@@ -3,6 +3,7 @@ import { Badge } from "./ui/Badge";
 import { cn } from "@/lib/utils";
 import PropTypes from "prop-types";
 import Link from "next/link";
+import Image from "next/image";
 
 export function CourseCardMaster({
   id,
@@ -41,8 +42,10 @@ export function CourseCardMaster({
     >
       <div className="overflow-hidden relative aspect-video">
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10" />
-        <img
+        <Image
           src={image}
+          width={400}
+          height={300}
           alt={title}
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 image-shine"
         />
@@ -90,18 +93,20 @@ export function CourseCardMaster({
           <Link
             href={{
               pathname: "/courseDetails",
-              query: { mainId: id,
-              title: title,
-              description: description,
-              image: image,
-              category: category,
-              level: level,
-              duration: duration,
-              students: students,
-              lessons: lessons,
-              instructor: instructor,
-              rating: rating,
-              price: price,},
+              query: {
+                mainId: id,
+                title: title,
+                description: description,
+                image: image,
+                category: category,
+                level: level,
+                duration: duration,
+                students: students,
+                lessons: lessons,
+                instructor: instructor,
+                rating: rating,
+                price: price,
+              },
             }}
           >
             <button className="inline-flex items-center text-sm font-medium text-orbi-700 group-hover:text-[#BD8939]">
