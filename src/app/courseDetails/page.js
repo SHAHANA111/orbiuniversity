@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import {Suspense , useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useParams } from "next/navigation";
 import Link from "next/link";
@@ -14,7 +14,7 @@ import { Button } from "../../components/ui/Button";
 
 
 
-const CourseDetail = ({
+const CourseDetailContent = ({
     // id,
     // mainId,
     // title,
@@ -282,6 +282,14 @@ const CourseDetail = ({
       </main>
       <Footer />
     </div>
+  );
+};
+
+const CourseDetail = () => {
+  return (
+      <Suspense fallback={<div>Loading course details...</div>}>
+          <CourseDetailContent />
+      </Suspense>
   );
 };
 
