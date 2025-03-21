@@ -6,8 +6,8 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import Image from 'next/image';
 import { ArrowLeft, Book, Clock, Star, Users } from "lucide-react";
-import Header from "../../components/Header";  // Adjust path as needed
-import Footer from "../../components/Footer";  // Adjust path as needed
+import Navbar from "../../components/Navbar";  // Adjust path as needed
+import Footer1 from "../../components/Footer1";  // Adjust path as needed
 import { Badge } from "../../components/ui/Badge";
 import { Separator } from "../../components/ui/Separator";
 import { Button } from "../../components/ui/Button";
@@ -107,14 +107,14 @@ const CourseDetailContent = ({
   if (loading) {
     return (
       <div className="min-h-screen flex flex-col">
-        <Header />
+        <Navbar />
         <main className="flex-grow pt-24 flex items-center justify-center">
           <div className="animate-pulse flex flex-col items-center">
             <div className="h-8 w-64 bg-gray-200 rounded mb-4"></div>
             <div className="h-4 w-40 bg-gray-100 rounded"></div>
           </div>
         </main>
-        <Footer />
+        <Footer1 />
       </div>
     );
   }
@@ -122,7 +122,7 @@ const CourseDetailContent = ({
   if (!course) {
     return (
       <div className="min-h-screen flex flex-col">
-        <Header />
+        <Navbar />
         <main className="flex-grow pt-24 flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-2xl font-bold text-gray-800 mb-4">Course Not Found</h1>
@@ -132,7 +132,7 @@ const CourseDetailContent = ({
             </Link>
           </div>
         </main>
-        <Footer />
+        <Footer1 />
       </div>
     );
   }
@@ -141,8 +141,8 @@ const CourseDetailContent = ({
     
     <div className="min-h-screen flex flex-col">
      
-      <Header />
-      <main className="flex-grow pt-4">
+      <Navbar />
+      <main className="flex-grow ">
       <section className="py-12 bg-[#043455] text-white">
       <div className="px-4 mx-auto">
         <div className="flex flex-col md:flex-row gap-8">
@@ -150,7 +150,7 @@ const CourseDetailContent = ({
             <div className="mb-4">
               <Link
                 href="/"
-                className="inline-flex items-center text-[#E5B161] hover:text-[#BD8939] transition-colors"
+                className="inline-flex items-center text-[#E5B161] hover:text-[#043455] transition-colors"
               >
                 <ArrowLeft className="mr-1 h-4 w-4" />
                 Back to Courses <span>{mainId}</span>
@@ -280,7 +280,7 @@ const CourseDetailContent = ({
       </div>
     </section>
       </main>
-      <Footer />
+      <Footer1 />
     </div>
   );
 };
