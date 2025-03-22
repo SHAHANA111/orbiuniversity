@@ -18,7 +18,7 @@
 // export default categories
 "use client";
 
-import { useState, useEffect } from "react";
+import { Suspense , useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import  Navbar  from "@/components/Navbar";
 import  Footer1  from "@/components/Footer1";
@@ -41,7 +41,7 @@ const categories = [
   { id: "selling", name: "Direct Selling" },
 ];
 
-const Courses = () => {
+const CoursesContent = () => {
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get("category") || "all";
   const searchQuery = searchParams.get("search") || "";
@@ -141,6 +141,14 @@ const Courses = () => {
       </main>
       <Footer1 />
     </div>
+  );
+};
+
+const Courses = () => {
+  return (
+      <Suspense fallback={<div>Loading course details...</div>}>
+          <CoursesContent />
+      </Suspense>
   );
 };
 
