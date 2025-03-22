@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import  Navbar  from "@/components/Navbar";
-import  Footer1  from "@/components/Footer1";
+import Navbar from "@/components/Navbar";
+import Footer1 from "@/components/Footer1";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -39,7 +39,8 @@ const Contact = () => {
                 Contact Us
               </h1>
               <p className="text-lg text-[#043455]/80">
-                Have questions about our courses or need help? Reach out to our team and we'll get back to you as soon as possible.
+                Have questions about our courses or need help? Reach out to our
+                team and we&apos;ll get back to you as soon as possible.
               </p>
             </div>
 
@@ -48,37 +49,70 @@ const Contact = () => {
                 <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#043455]/10 mb-4 text-[#043455]">
                   <Mail className="h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#043455] mb-2">Email Us</h3>
-                <p className="text-[#043455]/70 mb-4">For general inquiries and support</p>
-                <a href="mailto:education@orbi.pk" className="text-[#BD8939] hover:underline">education@orbi.pk</a>
+                <h3 className="text-xl font-semibold text-[#043455] mb-2">
+                  Email Us
+                </h3>
+                <p className="text-[#043455]/70 mb-4">
+                  For general inquiries and support
+                </p>
+                <a
+                  href="mailto:orbiuniversity@gmail.com"
+                  className="text-[#BD8939] hover:underline"
+                  target="_blank" 
+                >
+                  orbiuniversity@gmail.com
+                </a>
               </div>
-              
+
               <div className="flex flex-col items-center p-8 rounded-xl border border-[#1f2a3a]/20 bg-background text-center">
                 <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#043455]/10 mb-4 text-[#043455]">
                   <Phone className="h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#043455] mb-2">Call Us</h3>
-                <p className="text-[#043455]/70 mb-4">Mon-Fri from 9am to 5pm</p>
-                <a href="tel:+92xxxxxxxxx" className="text-[#BD8939] hover:underline">+92 xxx xxx xxxx</a>
+                <h3 className="text-xl font-semibold text-[#043455] mb-2">
+                  Call Us
+                </h3>
+                <p className="text-[#043455]/70 mb-4">
+                  Mon-Fri from 9am to 5pm
+                </p>
+                <p
+                  // href="111-116-724"
+                  className="text-[#BD8939] " 
+                >
+                  (UAN) 111-116-724
+                </p>
               </div>
-              
+
               <div className="flex flex-col items-center p-8 rounded-xl border border-[#1f2a3a]/20 bg-background text-center">
                 <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#043455]/10 mb-4 text-[#043455]">
                   <MapPin className="h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#043455] mb-2">Visit Us</h3>
+                <h3 className="text-xl font-semibold text-[#043455] mb-2">
+                  Visit Us
+                </h3>
                 <p className="text-[#043455]/70 mb-4">Our headquarters</p>
-                <address className="not-italic text-[#BD8939]">Islamabad, Pakistan</address>
+                <address className="not-italic text-[#BD8939]">
+                3rd Floor, GCU Road, Nishat One IT Tower Faisalabad
+                </address>
               </div>
             </div>
-            
+
             <div className="max-w-2xl mx-auto">
-              <form onSubmit={handleSubmit} className="space-y-6 p-8 rounded-xl border border-[#1f2a3a]/20 bg-background">
-                <h2 className="text-2xl font-semibold text-[#043455] mb-6">Send Us a Message</h2>
-                
+              <form
+                onSubmit={handleSubmit}
+                className="space-y-6 p-8 rounded-xl border border-[#1f2a3a]/20 bg-background"
+              >
+                <h2 className="text-2xl font-semibold text-[#043455] mb-6">
+                  Send Us a Message
+                </h2>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-[#043455] mb-1">Your Name</label>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-[#043455] mb-1"
+                    >
+                      Your Name
+                    </label>
                     <input
                       id="name"
                       name="name"
@@ -90,7 +124,12 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-[#043455] mb-1">Your Email</label>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-[#043455] mb-1"
+                    >
+                      Your Email
+                    </label>
                     <input
                       id="email"
                       name="email"
@@ -102,9 +141,14 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-[#043455] mb-1">Subject</label>
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-[#043455] mb-1"
+                  >
+                    Subject
+                  </label>
                   <input
                     id="subject"
                     name="subject"
@@ -115,9 +159,14 @@ const Contact = () => {
                     className="w-full px-4 py-2 border border-[#1f2a3a]/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#BD8939]"
                   />
                 </div>
-                
+
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-[#043455] mb-1">Your Message</label>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-[#043455] mb-1"
+                  >
+                    Your Message
+                  </label>
                   <textarea
                     id="message"
                     name="message"
@@ -128,7 +177,7 @@ const Contact = () => {
                     className="w-full px-4 py-2 border border-[#1f2a3a]/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#BD8939]"
                   />
                 </div>
-                
+
                 <button
                   type="submit"
                   disabled={isSubmitting}

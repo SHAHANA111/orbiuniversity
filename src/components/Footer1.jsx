@@ -36,7 +36,7 @@ const Footer1 =() => {
             <h4 className="font-medium text-white mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/" className="hover:text-[#BD8939] transition-colors">Home</Link></li>
-              <li><Link href="/courses" className="hover:text-[#BD8939] transition-colors">Courses</Link></li>
+              <li><Link href="/categories" className="hover:text-[#BD8939] transition-colors">Courses</Link></li>
               <li><Link href="/about" className="hover:text-[#BD8939] transition-colors">About Us</Link></li>
               <li><Link href="/contact" className="hover:text-[#BD8939] transition-colors">Contact</Link></li>
               <li><a href="https://orbi.pk" target="_blank" rel="noopener noreferrer" className="hover:text-[#BD8939] transition-colors">Visit Orbi.pk</a></li>
@@ -46,11 +46,11 @@ const Footer1 =() => {
           <div>
             <h4 className="font-medium text-white mb-4">Course Categories</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/courses?category=dropshipping" className="hover:text-[#BD8939] transition-colors">Dropshipping</Link></li>
-              <li><Link href="/courses?category=vendor" className="hover:text-[#BD8939] transition-colors">Vendor Relations</Link></li>
-              <li><Link href="/courses?category=importing" className="hover:text-[#BD8939] transition-colors">Importing</Link></li>
-              <li><Link href="/courses?category=selling" className="hover:text-[#BD8939] transition-colors">Direct Selling</Link></li>
-              <li><Link href="/courses?category=marketing" className="hover:text-[#BD8939] transition-colors">E-commerce Marketing</Link></li>
+              <li><Link href="/Categories?category=dropshipping" className="hover:text-[#BD8939] transition-colors">Dropshipping</Link></li>
+              <li><Link href="/categories?category=vendor" className="hover:text-[#BD8939] transition-colors">Vendor Relations</Link></li>
+              <li><Link href="/categories?category=importing" className="hover:text-[#BD8939] transition-colors">Importing</Link></li>
+              <li><Link href="/categories?category=selling" className="hover:text-[#BD8939] transition-colors">Direct Selling</Link></li>
+              <li><Link href="/categories?category=marketing" className="hover:text-[#BD8939] transition-colors">E-commerce Marketing</Link></li>
             </ul>
           </div>
           
@@ -58,9 +58,9 @@ const Footer1 =() => {
             <h4 className="font-medium text-white mb-4">Contact Us</h4>
             <ul className="space-y-2 text-sm">
               <li>Orbi Headquarters</li>
-              <li>Islamabad, Pakistan</li>
-              <li>education@orbi.pk</li>
-              <li>+92 xxx xxx xxxx</li>
+              <li>3rd Floor, GCU Road, Nishat One IT Tower Faisalabad</li>
+              <li>orbiuniversity@gmail.com</li>
+              <li>(UAN) 111-116-724</li>
             </ul>
           </div>
         </div>

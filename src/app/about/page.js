@@ -15,7 +15,7 @@ const About = () => {
             
             <div>
               <p style={{ fontSize: "1.125rem", color: "#043455cc", marginBottom: "1.5rem" }}>
-                Welcome to Orbi University, the educational arm of Orbi.pk - Pakistan's premier e-commerce platform. 
+                Welcome to Orbi University, the educational arm of Orbi.pk - Pakistan&apos;s premier e-commerce platform. 
                 Established with a vision to empower entrepreneurs and businesses in the digital marketplace, 
                 we provide comprehensive education on all aspects of e-commerce success.
               </p>
@@ -54,7 +54,7 @@ const About = () => {
               
               <p style={{ marginTop: "2rem" }}>
                 Join us at Orbi University and embark on your journey to e-commerce success. 
-                Whether you're just starting out or looking to scale your existing business, 
+                Whether you&apos;re just starting out or looking to scale your existing business, 
                 we have the knowledge and resources to help you achieve your goals.
               </p>
             </div>
